@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZapCart - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #000000;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .banner {
+      background: linear-gradient(to right, orange, pink);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .products {
+      padding: 1rem;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .product-card {
+      border: 1px solid #ddd;
+      border-radius: 1rem;
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-image {
+      background-color: #eee;
+      height: 100px;
+      margin-bottom: 0.5rem;
+    }
+    .add-to-cart {
+      background-color: #000;
+      color: #fff;
+      border: none;
+      padding: 0.5rem;
+      width: 100%;
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>ZapCart</h1>
+    <div>
+      <span>&#128269;</span>
+      <span>&#128722;</span>
+      <span>&#128100;</span>
+    </div>
+  </div>
+
+  <div class="banner">Welcome to ZapCart</div>
+
+  <div class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="product-image"></div>
+        <h3>T-Shirt</h3>
+        <p>$12.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image"></div>
+        <h3>Smartwatch</h3>
+        <p>$199.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image"></div>
+        <h3>Airbuds</h3>
+        <p>$59.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image"></div>
+        <h3>Wrist Watch</h3>
+        <p>$89.99</p>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
