@@ -159,6 +159,11 @@
       color: #555;
       margin-bottom: 5px;
     }
+    .product-info .description {
+      font-size: 14px;
+      color: #777;
+      margin-bottom: 10px;
+    }
     .add-to-cart {
       background: #f0c040;
       border: none;
@@ -207,6 +212,7 @@
       <a href="#">Home</a>
       <a href="#">Shop</a>
       <a href="#">Cart <span class="cart-count" id="cartCount">0</span></a>
+      <a href="admin.html">Admin</a>
       <a href="#">Login</a>
     </nav>
   </header>
@@ -232,264 +238,7 @@
         <option value="5000+">₹5,000+</option>
       </select>
     </div>
-    <div class="product-grid" id="productGrid">
-      <!-- Fashion -->
-      <div class="product-card" data-category="fashion" data-price="799">
-        <img src="https://images.unsplash.com/photo-1598033129183-c4f50c6f4620" alt="Ladies Kurti">
-        <div class="product-info">
-          <h3>Stylish Ladies Kurti</h3>
-          <p class="brand">Biba</p>
-          <p>₹799</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="1499">
-        <img src="https://images.unsplash.com/photo-1585487000160-6f3b89616c44" alt="Floral Maxi Dress">
-        <div class="product-info">
-          <h3>Floral Maxi Dress</h3>
-          <p class="brand">Zara</p>
-          <p>₹1,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="599">
-        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c" alt="Chic Women’s Top">
-        <div class="product-info">
-          <h3>Chic Women’s Top</h3>
-          <p class="brand">H&M</p>
-          <p>₹599</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="499">
-        <img src="https://images.unsplash.com/photo-1525171254930-643fc83b3692" alt="Graphic Tee">
-        <div class="product-info">
-          <h3>Graphic Tee</h3>
-          <p class="brand">Forever 21</p>
-          <p>₹499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="1299">
-        <img src="https://images.unsplash.com/photo-1583743814966-92d1ff4554c5" alt="High Waist Jeans">
-        <div class="product-info">
-          <h3>High Waist Jeans</h3>
-          <p class="brand">Levi’s</p>
-          <p>₹1,299</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="999">
-        <img src="https://images.unsplash.com/photo-1602293589930-45aad59ba4c0" alt="Men’s Formal Shirt">
-        <div class="product-info">
-          <h3>Men’s Formal Shirt</h3>
-          <p class="brand">Raymond</p>
-          <p>₹999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="3999">
-        <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf" alt="Women’s Denim Jacket">
-        <div class="product-info">
-          <h3>Women’s Denim Jacket</h3>
-          <p class="brand">Levi’s</p>
-          <p>₹3,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="1799">
-        <img src="https://images.unsplash.com/photo-1602810316693-88e22721f9ef" alt="Men’s Casual Shirt">
-        <div class="product-info">
-          <h3>Men’s Casual Shirt</h3>
-          <p class="brand">Peter England</p>
-          <p>₹1,799</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="6499">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Men’s Sneakers">
-        <div class="product-info">
-          <h3>Men’s Casual Sneakers</h3>
-          <p class="brand">Nike</p>
-          <p>₹6,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="5999">
-        <img src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3" alt="Women’s Running Shoes">
-        <div class="product-info">
-          <h3>Women’s Running Shoes</h3>
-          <p class="brand">Adidas</p>
-          <p>₹5,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <!-- Electronics -->
-      <div class="product-card" data-category="electronics" data-price="2499">
-        <img src="https://images.unsplash.com/photo-1590658268034-7c2e8f27b3d4" alt="Wireless Earbuds">
-        <div class="product-info">
-          <h3>Wireless Bluetooth Earbuds</h3>
-          <p class="brand">SoundCore</p>
-          <p>₹2,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="7999">
-        <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c" alt="Fitness Smartwatch">
-        <div class="product-info">
-          <h3>Fitness Smartwatch</h3>
-          <p class="brand">FitBit</p>
-          <p>₹7,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="34999">
-        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97" alt="Smart TV">
-        <div class="product-info">
-          <h3>4K LED Smart TV (43-inch)</h3>
-          <p class="brand">Samsung</p>
-          <p>₹34,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="1999">
-        <img src="https://images.unsplash.com/photo-1611003229187-80e01cd79e2f" alt="Wireless Gaming Mouse">
-        <div class="product-info">
-          <h3>Wireless Gaming Mouse</h3>
-          <p class="brand">Logitech</p>
-          <p>₹1,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="1799">
-        <img src="https://images.unsplash.com/photo-1598961942551-7ab3534e8d0b" alt="Power Bank">
-        <div class="product-info">
-          <h3>Portable Power Bank (10000mAh)</h3>
-          <p class="brand">Anker</p>
-          <p>₹1,799</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="14999">
-        <img src="https://images.unsplash.com/photo-1505740106531-4243f3831145" alt="Headphones">
-        <div class="product-info">
-          <h3>Noise-Cancelling Headphones</h3>
-          <p class="brand">Sony</p>
-          <p>₹14,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="1299">
-        <img src="https://images.unsplash.com/photo-1590658268034-7c2e8f27b3d4" alt="Wireless Charger">
-        <div class="product-info">
-          <h3>Wireless Charger Pad</h3>
-          <p class="brand">Belkin</p>
-          <p>₹1,299</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="electronics" data-price="3499">
-        <img src="https://images.unsplash.com/photo-1600721391689-2564e0a4d92e" alt="Bluetooth Speaker">
-        <div class="product-info">
-          <h3>Bluetooth Portable Speaker</h3>
-          <p class="brand">JBL</p>
-          <p>₹3,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <!-- Accessories -->
-      <div class="product-card" data-category="accessories" data-price="1999">
-        <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d" alt="Men’s Watch">
-        <div class="product-info">
-          <h3>Elegant Men’s Watch</h3>
-          <p class="brand">Titan</p>
-          <p>₹1,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="accessories" data-price="1599">
-        <img src="https://images.unsplash.com/photo-1523265986999-1a047f672956" alt="Ladies Watch">
-        <div class="product-info">
-          <h3>Rose Gold Watch</h3>
-          <p class="brand">Fastrack</p>
-          <p>₹1,599</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="accessories" data-price="2499">
-        <img src="https://images.unsplash.com/photo-1594576722512-582bcd081c74" alt="Leather Strap Watch">
-        <div class="product-info">
-          <h3>Leather Strap Watch</h3>
-          <p class="brand">Casio</p>
-          <p>₹2,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="accessories" data-price="3499">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Laptop Backpack">
-        <div class="product-info">
-          <h3>Leather Laptop Backpack</h3>
-          <p class="brand">Wildcraft</p>
-          <p>₹3,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="accessories" data-price="6499">
-        <img src="https://images.unsplash.com/photo-1582979512210-0c8b61d9d4cb" alt="Sunglasses">
-        <div class="product-info">
-          <h3>Women’s Sunglasses</h3>
-          <p class="brand">Ray-Ban</p>
-          <p>₹6,499</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <!-- Home Essentials -->
-      <div class="product-card" data-category="home" data-price="899">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Water Bottle">
-        <div class="product-info">
-          <h3>Stainless Steel Water Bottle</h3>
-          <p class="brand">Milton</p>
-          <p>₹899</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="home" data-price="1099">
-        <img src="https://images.unsplash.com/photo-1584622657191-6df3e0b1fb3f" alt="Coffee Mug Set">
-        <div class="product-info">
-          <h3>Ceramic Coffee Mug Set</h3>
-          <p class="brand">HomeCentre</p>
-          <p>₹1,099</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="home" data-price="1699">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Electric Kettle">
-        <div class="product-info">
-          <h3>Electric Kettle (1.5L)</h3>
-          <p class="brand">Philips</p>
-          <p>₹1,699</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="home" data-price="1399">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Smart LED Bulb">
-        <div class="product-info">
-          <h3>Smart LED Bulb</h3>
-          <p class="brand">Philips Hue</p>
-          <p>₹1,399</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-      <div class="product-card" data-category="fashion" data-price="1999">
-        <img src="https://images.unsplash.com/photo-1590402494587-44b70d90f112" alt="Designer One-piece">
-        <div class="product-info">
-          <h3>Designer One-piece</h3>
-          <p class="brand">Vero Moda</p>
-          <p>₹1,999</p>
-          <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
-        </div>
-      </div>
-    </div>
+    <div class="product-grid" id="productGrid"></div>
   </section>
 
   <footer>
@@ -543,6 +292,33 @@
         product.style.display = show ? 'block' : 'none';
       });
     }
+
+    function loadProducts() {
+      const productGrid = document.getElementById('productGrid');
+      const products = JSON.parse(localStorage.getItem('products')) || [];
+      productGrid.innerHTML = '';
+
+      products.forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.classList.add('product-card');
+        productCard.setAttribute('data-category', product.category);
+        productCard.setAttribute('data-price', product.price);
+        productCard.innerHTML = `
+          <img src="${product.imageUrl}" alt="${product.name}">
+          <div class="product-info">
+            <h3>${product.name}</h3>
+            <p class="brand">${product.brand}</p>
+            <p>₹${product.price}</p>
+            <p class="description">${product.description}</p>
+            <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+          </div>
+        `;
+        productGrid.appendChild(productCard);
+      });
+    }
+
+    // Load products on page load
+    window.onload = loadProducts;
   </script>
 </body>
 </html>
